@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Tailwind  -->
+    <link href="./styles/tailwind/output.css" rel="stylesheet">
+    
+    <title>Swiftbore</title>
+</head>
+<body>
+    <main class="bg-orange-400 min-h-screen pt-20">
+        <h1 class="text-5xl text-white text-center">Swiftbore</h1>
+        <form action="">
+            <label class="block w-full max-w-md mx-auto mt-30">Email:</label>
+            <input type="email" placeholder="Digite seu e-mail" class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1">
+            
+            <label class="block w-full max-w-md mx-auto mt-4">Senha:</label>
+            <input type="password" placeholder="Digite sua senha" class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1">
+
+            <a class="text-sm text-white font-semibold block w-full max-w-md mx-auto mt-1" href="#">Esqueci minha senha</a>
+            
+            <button type="submit" class="bg-white text-black p-3 rounded w-full max-w-md mx-auto block mt-8">Continuar</button>
+
+            <p class="text-black text-center block w-full max-w-md mx-auto mt-1">Não tem uma conta?  
+                <a class="text-white font-semibold" href="#">Cadastre-se</a>
+            </p>
+
+            <!-- Separator -->
+            <div class="flex items-center my-18 w-full max-w-md mx-auto">
+                <hr class="flex-grow border-t border-white">
+                <span class="mx-2 text-white">ou</span>
+                <hr class="flex-grow border-t border-white">
+            </div>
+
+            <div class="flex justify-center gap-8 w-full max-w-md mx-auto">
+                <!-- Google button -->
+                <a class="w-14 h-14 rounded-full flex items-center justify-center shadow hover:shadow-lg transition bg-white" href="#">
+                    <img src="./assets/google-logo.png" alt="Google" class="w-10 h-10 object-contain">
+                </a>
+
+                <!-- Facebook button -->
+                <a class="w-14 h-14 rounded-full flex items-center justify-center shadow hover:shadow-lg transition overflow-hidden" href="#">
+                    <img src="./assets/facebook-logo.png" alt="Facebook" class="w-full h-full object-contain">
+                </a>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>

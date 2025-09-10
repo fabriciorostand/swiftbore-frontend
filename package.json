@@ -1,0 +1,25 @@
+{
+  "name": "fintech-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind-build": "npx @tailwindcss/cli -i ./src/styles/tailwind/input.css -o ./src/styles/tailwind/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabriciorostand/fintech-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabriciorostand/fintech-frontend/issues"
+  },
+  "homepage": "https://github.com/fabriciorostand/fintech-frontend#readme",
+  "description": "",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  }
+}
