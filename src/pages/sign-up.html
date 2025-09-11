@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind  -->
+    <link href="../styles/tailwind/output.css" rel="stylesheet">
+
+    <title>Swiftbore</title>
+</head>
+<body>
+    <main class="bg-orange-400 min-h-screen pt-20">
+        <h1 class="text-5xl text-white text-center">Swiftbore</h1>
+        <form action="">
+            <label class="block w-full max-w-md mx-auto mt-30">Nome:</label>
+            <input type="text" placeholder="Digite seu nome" class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1">
+
+            <label class="block w-full max-w-md mx-auto mt-4">Data de nascimento:</label>
+            <input type="date" class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1">
+
+            <label class="block w-full max-w-md mx-auto mt-4">Email:</label>
+            <input type="email" placeholder="Digite seu e-mail" class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1">
+
+            <label class="block w-full max-w-md mx-auto mt-4">Senha:</label>
+            <input type="password" placeholder="Digite sua senha" class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1">
+
+            <p class="text-black text-center block w-full max-w-md mx-auto mt-8">
+                Ao se cadastrar, você concorda com nossos <a class="text-white" href="#">Termos</a>, 
+                <a class="text-white" href="#">Política de Privacidade</a> e
+                <a class="text-white" href="#">Política de Cookies</a>.
+            </p>
+
+            <button type="submit" class="bg-white text-black p-3 rounded w-full max-w-md mx-auto block mt-8 hover:cursor-pointer hover:bg-gray-100">Cadastre-se</button>
+
+            <p class="text-black text-center block w-full max-w-md mx-auto mt-1">Tem uma conta?  
+                <a class="text-white font-semibold" href="../index.html">Conecte-se</a>
+            </p>
+        </form>
+    </main>
+</body>
+</html>
