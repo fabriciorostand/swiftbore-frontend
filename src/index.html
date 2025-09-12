@@ -14,14 +14,18 @@
         <h1 class="text-5xl text-white text-center">Swiftbore</h1>
         <form action="">
             <label class="block w-full max-w-md mx-auto mt-30">Email:</label>
-            <input type="email" placeholder="Digite seu e-mail" class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1">
+            <input class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1" type="email" placeholder="Digite seu e-mail">
             
             <label class="block w-full max-w-md mx-auto mt-4">Senha:</label>
-            <input type="password" placeholder="Digite sua senha" class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1">
+            <input class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1"type="password" placeholder="Digite sua senha">
 
-            <a class="text-sm text-white font-semibold block w-full max-w-md mx-auto mt-1" href="./pages/password-reset.html">Esqueci minha senha</a>
+            <a class="text-sm text-white font-semibold block w-full max-w-md mx-auto mt-1" href="./pages/password-reset.html">
+                Esqueci minha senha
+            </a>
             
-            <button type="submit" class="bg-white text-black p-3 rounded w-full max-w-md mx-auto block mt-8 hover:cursor-pointer hover:bg-gray-100">Entrar</button>
+            <button id="signin-button" class="bg-white text-black p-3 rounded w-full max-w-md mx-auto block mt-8 hover:cursor-pointer hover:bg-gray-100" type="submit">
+                Entrar
+            </button>
 
             <p class="text-black text-center block w-full max-w-md mx-auto mt-1">Não tem uma conta?  
                 <a class="text-white font-semibold" href="./pages/sign-up.html">Cadastre-se</a>
@@ -42,11 +46,14 @@
 
                 <!-- Facebook button -->
                 <a class="w-14 h-14 rounded-full flex items-center justify-center shadow hover:shadow-lg transition overflow-hidden" href="#">
-                    <img src="./assets/images/facebook-logo.png" alt="Facebook" class="w-full h-full object-contain">
+                    <img class="w-full h-full object-contain" src="./assets/images/facebook-logo.png" alt="Facebook">
                 </a>
             </div>
 
         </form>
     </main>
+
+    <!-- JavaScript -->
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
