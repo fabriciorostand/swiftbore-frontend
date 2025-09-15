@@ -9,7 +9,7 @@
 
     <title>Swiftbore</title>
 </head>
-<body>
+<body class="flex flex-col min-h-screen">
     <header class="bg-orange-400 px-6 py-2 flex items-center justify-between shadow-md">
         <!-- Menu icon -->
         <div>
@@ -28,10 +28,52 @@
             </div>
         </div>
     </header>
-    <main class="bg-gray-100 min-h-screen">
-        <div class="bg-gray-300 m-4 p-4">
+    <main class="bg-gray-100 flex-1 p-4">
+        <!-- Week highlights -->
+        <div class="bg-gray-300 h-100">
             Destaques
         </div>
+
+        <!-- Division info -->
+        <h2 class="mt-6">Divisão</h2>
+        <a class="border border-gray-300 rounded-sm mt-2 p-4 flex items-center gap-4" href="">
+            <div class="w-16 h-16 flex items-center justify-center bg-gray-300 rounded-full">
+                <img src="../assets/images/gold-division.png" alt="Ícone da divisão">
+            </div>
+            <span>
+                Ouro
+            </span>
+        </a>
+
+        <!-- Ranking info -->
+        <h2 class="mt-6">Ranking</h2>
+        <a class="border border-gray-300 rounded-sm mt-2 p-4 flex items-center gap-4" href="">
+            <div class="w-16 h-16 flex items-center justify-center bg-gray-300 rounded-full">
+                <img src="../assets/images/trophie.png" alt="Ícone do ranking">
+            </div>
+            7º
+        </a>
     </main>
+    <footer class="flex bg-white text-black text-center shadow-[0_-2px_6px_rgba(0,0,0,0.1)]">
+        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="./dashboard.html">
+            <img src="../assets/images/home.png" alt="Início">
+            Início
+        </a>
+        
+        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="">
+            <img src="../assets/images/calendar.png" alt="Eventos">
+            Eventos
+        </a>
+        
+        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="">
+            <img src="../assets/images/stars.png" alt="Recompensas">
+            Recompensas
+        </a>
+        
+        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="">
+            <img src="../assets/images/settings.png" alt="Configurações">
+            Configurações
+        </a>
+    </footer>
     </body>
 </html>
