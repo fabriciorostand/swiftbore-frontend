@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind  -->
+    <link href="../styles/tailwind/output.css" rel="stylesheet">
+
+    <title>Swiftbore</title>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="fixed top-0 left-0 w-full bg-orange-400 px-6 py-2 flex items-center justify-between shadow-md z-50">
+        <!-- Menu icon -->
+        <div>
+            <img class="h-6 w-6 cursor-pointer" src="../assets/images/menu.png" alt="Ícone do menu">
+        </div>
+                
+        <div class="flex items-center gap-4">
+            <!-- Notification icon -->
+            <div>
+                <img class="h-6 w-6 cursor-pointer" src="../assets/images/notification.png" alt="Ícone das notificações">
+            </div>
+
+            <!-- Account avatar -->
+            <div>
+                <img class="h-10 w-10 cursor-pointer" src="../assets/images/account-avatar.png" alt="Ícone do avatar">
+            </div>
+        </div>
+    </header>
+    <main class="bg-gray-100 flex-1 p-4 pt-16 pb-20">
+        <!-- Active event -->
+         <div class="relative w-full max-w-4xl mx-auto mt-2 overflow-hidden rounded-lg shadow-lg aspect-[1/1] md:aspect-[1168/360]">
+            <picture class="w-full h-full flex-shrink-0">
+                    <source srcset="../assets/images/highlight-1.webp" media="(min-width: 768px)">
+                    <img src="../assets/images/highlight-1-sm.webp" class="w-full h-full object-cover" alt="Evento atual">
+                </picture>
+         </div>
+
+        <!-- Upcoming events -->
+        <div class="max-w-4xl mx-auto mt-6">
+            <h2>Próximos eventos</h2>
+             <div class="border border-gray-300 rounded-sm mt-2 p-4 flex items-center gap-4">
+                <div class="w-16 h-16 flex items-center justify-center bg-gray-300 rounded-full">
+                    <img src="../assets/images/upcoming-event-icon.png" alt="Ícone da evento">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-medium">
+                        Natal
+                    </span>
+                    <p class="text-sm text-gray-600">
+                        Começa em 15/12
+                    </p>
+                </div>
+            </div>
+            <div class="border border-gray-300 rounded-sm mt-2 p-4 flex items-center gap-4">
+                <div class="w-16 h-16 flex items-center justify-center bg-gray-300 rounded-full">
+                    <img src="../assets/images/upcoming-event-icon.png" alt="Ícone da evento">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-medium">
+                        Ano Novo
+                    </span>
+                    <p class="text-sm text-gray-600">
+                        Começa em 27/12
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fixed bottom-0 left-0 w-full flex bg-white text-black text-center shadow-[0_-2px_6px_rgba(0,0,0,0.1)] md:hidden">
+        <!-- Home -->
+        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="./dashboard.html">
+            <img src="../assets/images/home.png" alt="Início">
+            Início
+        </a>
+        
+        <!-- Events -->
+        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="events.html">
+            <img src="../assets/images/calendar.png" alt="Eventos">
+            Eventos
+        </a>
+        
+        <!-- Rewards -->
+        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="">
+            <img src="../assets/images/stars.png" alt="Recompensas">
+            Recompensas
+        </a>
+        
+        <!-- Configs -->
+        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="">
+            <img src="../assets/images/settings.png" alt="Configurações">
+            Configurações
+        </a>
+    </footer>
+</body>
+</html>
