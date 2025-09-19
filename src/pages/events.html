@@ -50,31 +50,8 @@
         <!-- Upcoming events -->
         <div class="max-w-4xl mx-auto mt-6">
             <h2>Próximos eventos</h2>
-            <div class="border border-gray-300 rounded-sm mt-2 p-4 flex items-center gap-4">
-                <div class="w-16 h-16 flex items-center justify-center bg-gray-300 rounded-full">
-                    <img src="../assets/images/upcoming-event-icon.png" alt="Ícone da evento">
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-medium">
-                        Natal
-                    </span>
-                    <p class="text-sm text-gray-600">
-                        Começa em 15/12
-                    </p>
-                </div>
-            </div>
-            <div class="border border-gray-300 rounded-sm mt-2 p-4 flex items-center gap-4">
-                <div class="w-16 h-16 flex items-center justify-center bg-gray-300 rounded-full">
-                    <img src="../assets/images/upcoming-event-icon.png" alt="Ícone da evento">
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-medium">
-                        Ano Novo
-                    </span>
-                    <p class="text-sm text-gray-600">
-                        Começa em 27/12
-                    </p>
-                </div>
+            <div id="upcoming-events">
+                <!-- Upcoming events will be loaded dynamically here -->
             </div>
         </div>
     </main>
@@ -103,5 +80,8 @@
             Configurações
         </a>
     </footer>
+
+    <!-- Upcoming events script -->
+    <script src="../scripts/upcoming-events.js"></script>
 </body>
 </html>
