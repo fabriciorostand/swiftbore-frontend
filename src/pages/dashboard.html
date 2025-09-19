@@ -42,30 +42,11 @@
         <!-- Week highlights -->
         <div class="relative w-full max-w-4xl mx-auto mt-2 overflow-hidden rounded-lg shadow-lg aspect-[1/1] md:aspect-[1168/360]">
             <div class="flex transition-transform duration-700 h-full" id="carousel">
-        
-                <!-- Slide 1 -->
-                <picture class="w-full h-full flex-shrink-0">
-                    <source srcset="../assets/images/highlight-1.webp" media="(min-width: 768px)">
-                    <img src="../assets/images/highlight-1-sm.webp" class="w-full h-full object-cover" alt="Destaque da semana 1">
-                </picture>
-
-                <!-- Slide 2 -->
-                <picture class="w-full h-full flex-shrink-0">
-                    <source srcset="../assets/images/highlight-2.webp" media="(min-width: 768px)">
-                    <img src="../assets/images/highlight-2-sm.webp" class="w-full h-full object-cover" alt="Destaque da semana 2">
-                </picture>
-
-                <!-- Slide 3 -->
-                <picture class="w-full h-full flex-shrink-0">
-                    <source srcset="../assets/images/highlight-3.webp" media="(min-width: 768px)">
-                    <img src="../assets/images/highlight-3-sm.webp" class="w-full h-full object-cover" alt="Destaque da semana 3">
-                </picture>
+                <!-- Week highlights images will be loaded dynamically here  -->
             </div>
 
             <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3" id="dots">
-                <button class="w-4 h-4 rounded-full bg-gray-800 border-2 border-white opacity-50" onclick="goToSlide(0)"></button>
-                <button class="w-4 h-4 rounded-full bg-gray-800 border-2 border-white opacity-50" onclick="goToSlide(1)"></button>
-                <button class="w-4 h-4 rounded-full bg-gray-800 border-2 border-white opacity-50" onclick="goToSlide(2)"></button>
+                <!-- Carousel dots will be loaded dynamically here -->
             </div>
         </div>
         
@@ -115,7 +96,7 @@
         </a>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="../scripts/dashboard.js"></script>
+    <!-- Week highlights carousel script -->
+    <script src="../scripts/week-highlights-carousel.js"></script>
     </body>
 </html>
