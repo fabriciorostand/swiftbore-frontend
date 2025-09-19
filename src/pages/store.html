@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind  -->
+    <link href="../styles/tailwind/output.css" rel="stylesheet">
+
+    <title>Swiftbore</title>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="fixed top-0 left-0 w-full bg-orange-400 px-4 py-2 flex items-center justify-between shadow-md z-50"> 
+        <div class="flex items-center gap-4">
+            <!-- Back button -->
+            <button onclick="window.history.back()">
+                <img class="h-6 w-6 cursor-pointer" src="../assets/images/arrow-back.png" alt="Ícone de voltar">
+            </button>
+            <span class="text-white text-md">
+                Loja
+            </span>
+        </div>
+                
+        <div class="flex items-center gap-4 py-1">
+            <!-- Points info -->
+             <div class="flex items-center gap-2 bg-red-400 rounded-xl px-2 py-1.5 shadow-sm">
+                <div>
+                    <img class="h-5 w-5" src="../assets/images/points.png" alt="Ícone de pontos">
+                </div>
+                <span class="font-semibold text-white text-sm">
+                    125
+                </span>
+            </div>
+        </div>
+    </header>
+    <main class="bg-gray-100 flex-1 p-4 pt-16 pb-20">
+        <!-- Products -->
+        <div id="products-container" class="max-w-4xl mx-auto mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Products will be loaded here dynamically -->
+        </div>
+    </main>
+
+    <!-- Script to load products dynamically -->
+    <script src="../scripts/store-products.js"></script>
+</body>
+</html>
