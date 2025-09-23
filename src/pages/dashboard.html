@@ -32,10 +32,22 @@
                 <img class="h-6 w-6 cursor-pointer" src="../assets/images/notification.png" alt="Ícone das notificações">
             </div>
 
-            <!-- Account avatar -->
-            <div>
-                <img class="h-10 w-10 cursor-pointer" src="../assets/images/account-avatar.png" alt="Ícone do avatar">
+            <!-- Account avatar and dropdown -->
+            <div class="relative">
+                <img id="avatarBtn" class="h-10 w-10 cursor-pointer rounded-full" src="../assets/images/account-avatar.png" alt="Ícone do avatar">
+
+                <!-- Dropdown -->
+                <div id="avatarDropdown" class="hidden absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg py-2">
+                    <a href="profile.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                        Perfil
+                    </a>
+                    <button class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">
+                        Sair
+                    </button>
             </div>
+    </div>
+
+
         </div>
     </header>
     <main class="bg-gray-100 flex-1 p-4 pt-16 pb-20">
@@ -98,5 +110,7 @@
 
     <!-- Week highlights carousel script -->
     <script src="../scripts/week-highlights-carousel.js"></script>
+    <!-- Avatar dropdown script -->
+    <script src="../scripts/avatar-dropdown.js"></script>
     </body>
 </html>
