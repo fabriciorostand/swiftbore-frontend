@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind  -->
+    <link href="../styles/tailwind/output.css" rel="stylesheet">
+
+    <title>Swiftbore</title>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="fixed top-0 left-0 w-full bg-orange-400 px-4 py-2 flex items-center justify-between shadow-md z-50"> 
+        <div class="flex items-center gap-4">
+            <!-- Back button -->
+            <button onclick="window.history.back()">
+                <img class="h-6 w-6 cursor-pointer" src="../assets/images/arrow-back.png" alt="Ícone de voltar">
+            </button>
+            <span class="text-white text-md">
+                Divisão
+            </span>
+        </div>
+                
+        <div class="flex items-center gap-4 py-1">
+            <!-- Points info -->
+             <div class="flex items-center gap-2 bg-red-400 rounded-xl px-2 py-1.5 shadow-sm">
+                <div>
+                    <img class="h-5 w-5" src="../assets/images/points.png" alt="Ícone de pontos">
+                </div>
+                <span class="font-semibold text-white text-sm">
+                    125
+                </span>
+            </div>
+        </div>
+    </header>
+    <main class="bg-gray-100 flex-1 p-4 pt-16 pb-20">
+        <!-- Division card -->
+        <div class="flex items-center max-w-4xl mx-auto bg-white rounded-xl mt-2 p-4 pt-8 pb-8 xl:pt-10 xl:pb-10 shadow-md">
+            <!-- Division image -->
+            <div class="flex-shrink-0 m-2">
+                <img class="h-18 w-18" src="../assets/images/gold-division.png" alt="Divisão Ouro">
+            </div>
+
+            <div class="flex-1 ml-4">
+                <h2 class="text-2xl font-bold text-yellow-400">Ouro</h2>
+                <!-- Progress bar -->
+                <div class="w-full bg-gray-300 rounded-full h-3 mt-4">
+                    <div class="h-3 rounded-full bg-orange-400"></div>
+                </div>
+                <!-- Markers -->
+                <div class="flex justify-between text-sm text-gray-500 mt-2">
+                    <span>R$50.000</span>
+                    <span>Máximo</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Explanation section -->
+        <section class="max-w-4xl mx-auto mt-8">
+            <p class="text-gray-600 leading-relaxed text-sm mb-4">
+                As divisões são definidas de acordo com as vendas mensais da loja, e cada uma concede recompensas específicas.
+                <span class="font-medium">As divisões são resetadas mensalmente.</span>
+            </p>
+            <ul class="space-y-4 text-sm">
+                <li class="border-l-4 border-orange-400 pl-3">
+                    <span class="font-bold text-gray-800">🥉 Bronze:</span>
+                    <span class="text-gray-700"> R$10.000 – R$20.000 em vendas </span>
+                    <span class="block text-gray-500 mt-1">🎁 Recompensa: bônus de R$500 para a equipe</span>
+                </li>
+                <li class="border-l-4 border-gray-400 pl-3">
+                    <span class="font-bold text-gray-800">🥈 Prata:</span>
+                    <span class="text-gray-700"> R$20.000 – R$50.000 em vendas </span>
+                    <span class="block text-gray-500 mt-1">🎁 Recompensa: bônus de R$1.000 para a equipe</span>
+                </li>
+                <li class="border-l-4 border-yellow-400 pl-3">
+                    <span class="font-bold text-gray-800">🥇 Ouro:</span>
+                    <span class="text-gray-700"> Acima de R$50.000 em vendas </span>
+                    <span class="block text-gray-500 mt-1">🎁 Recompensa: bônus de R$2.000 + treinamento para a equipe</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
