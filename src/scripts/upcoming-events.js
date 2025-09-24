@@ -2,12 +2,12 @@ const upcomingEvents = [
     {
         name: "Natal",
         date: "15/12",
-        icon: "../assets/images/upcoming-event-icon.png",
+        icon: "../assets/icons/upcoming-event-icon.png",
     },
     {
         name: "Ano Novo",
         date: "27/12",
-        icon: "../assets/images/upcoming-event-icon.png",
+        icon: "../assets/icons/upcoming-event-icon.png",
     }
 ];
 

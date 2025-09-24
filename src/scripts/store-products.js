@@ -35,7 +35,7 @@ products.forEach(product => {
       <div class="p-4 flex flex-col flex-grow">
         <h3 class="font-semibold text-gray-800 text-lg mb-4">${product.name}</h3>
         <button class="mt-auto flex items-center justify-center gap-2 bg-orange-400 text-white py-3 rounded-lg hover:cursor-pointer hover:bg-orange-500 transition w-full">
-          <img class="h-6 w-6" src="../assets/images/points.png" alt="Ícone de pontos">
+          <img class="h-6 w-6" src="../assets/icons/points.png" alt="Ícone de pontos">
           <span class="font-semibold text-sm">${product.points}</span>
         </button>
       </div>

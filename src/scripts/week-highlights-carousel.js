@@ -1,17 +1,17 @@
 const highlights = [
   {
-    mobile: "../assets/images/highlight-1-sm.webp",
-    desktop: "../assets/images/highlight-1.webp",
+    mobile: "../assets/images/highlights/highlight-1-sm.webp",
+    desktop: "../assets/images/highlights/highlight-1.webp",
     alt: "Destaque da semana 1"
   },
   {
-    mobile: "../assets/images/highlight-2-sm.webp",
-    desktop: "../assets/images/highlight-2.webp",
+    mobile: "../assets/images/highlights/highlight-2-sm.webp",
+    desktop: "../assets/images/highlights/highlight-2.webp",
     alt: "Destaque da semana 2"
   },
   {
-    mobile: "../assets/images/highlight-3-sm.webp",
-    desktop: "../assets/images/highlight-3.webp",
+    mobile: "../assets/images/highlights/highlight-3-sm.webp",
+    desktop: "../assets/images/highlights/highlight-3.webp",
     alt: "Destaque da semana 3"
   }
 ];

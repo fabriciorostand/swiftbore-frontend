@@ -9,7 +9,7 @@ function isOpen() {
 }
 
 function setIcons(open) {
-    const src = open ? '../assets/images/menu.png' : '../assets/images/menu.png';
+    const src = open ? '../assets/icons/menu.png' : '../assets/icons/menu.png';
     if (menuToggleIcon) menuToggleIcon.src = src;
     if (sidebarToggleIcon) sidebarToggleIcon.src = src;
 }
