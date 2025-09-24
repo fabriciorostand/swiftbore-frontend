@@ -11,12 +11,41 @@
 </head>
 <body class="flex flex-col min-h-screen">
     <header class="fixed top-0 left-0 w-full bg-orange-400 px-6 py-2 flex items-center justify-between shadow-md z-50">
-        <!-- Menu icon -->
-        <div>
-            <img class="h-6 w-6 cursor-pointer" src="../assets/images/menu.png" alt="Ícone do menu">
+        <!-- Menu button -->
+        <button id="menuToggleBtn" class="hidden md:flex">
+            <img id="menuToggleIcon" class="h-6 w-6 cursor-pointer" src="../assets/images/menu.png" alt="Ícone do menu">
+        </button>
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="fixed top-0 left-0 h-full w-60 bg-orange-400 shadow-lg transform -translate-x-full transition-transform duration-300 z-40">
+            <div class="p-4 flex items-center gap-3">
+                <!-- Menu button in sidebar -->
+                <button id="sidebarToggleBtn" class="p-2">
+                    <img id="sidebarToggleIcon" class="h-6 w-6 cursor-pointer" src="../assets/images/menu.png" alt="Ícone do menu">
+                </button>
+            </div>
+
+            <nav class="flex flex-col p-4 gap-4">
+                <a href="./dashboard.html" class="flex items-center gap-2 p-2 text-white rounded-lg hover:bg-orange-300 transition">
+                    <img src="../assets/icons/home-white.png" alt="Início">
+                        Início
+                </a>
+                <a href="events.html" class="flex items-center gap-2 p-2 text-white rounded-lg hover:bg-orange-300 transition">
+                    <img src="../assets/icons/calendar-white.png" alt="Eventos">
+                        Eventos
+                </a>
+                <a href="store.html" class="flex items-center gap-2 p-2 text-white rounded-lg hover:bg-orange-300 transition">
+                    <img src="../assets/icons/store-white.png" alt="Loja">
+                        Loja
+                </a>
+                <a href="#" class="flex items-center gap-2 p-2 text-white rounded-lg hover:bg-orange-300 transition">
+                    <img src="../assets/icons/settings-white.png" alt="Configurações">
+                        Configurações
+                </a>
+            </nav>
         </div>
                 
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 ml-auto">
             <!-- Points info -->
              <a class="flex items-center gap-2 bg-red-400 rounded-xl px-2 py-1 shadow-sm" href="store.html">
                 <div>
@@ -33,14 +62,25 @@
             </div>
 
             <!-- Account avatar -->
-            <div>
-                <img class="h-10 w-10 cursor-pointer" src="../assets/images/account-avatar.png" alt="Ícone do avatar">
+            <div class="relative">
+                <img id="avatarBtn" class="h-10 w-10 cursor-pointer rounded-full" src="../assets/images/account-avatar.png" alt="Ícone do avatar">
+
+                <!-- Dropdown -->
+                <div id="avatarDropdown" class="hidden absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg py-2">
+                    <a href="profile.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                        Perfil
+                    </a>
+                    <!-- Logout button -->
+                    <button id="logoutBtn" class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:cursor-pointer">
+                        Sair
+                    </button>
+                </div>
             </div>
         </div>
     </header>
     <main class="bg-gray-100 flex-1 p-4 pt-16 pb-20">
         <!-- Active event -->
-        <a class="block relative w-full max-w-4xl mx-auto mt-2 overflow-hidden rounded-lg shadow-lg aspect-[1/1] md:aspect-[1168/360]" href="active-event.html">
+        <a class="block relative w-full max-w-6xl mx-auto mt-2 overflow-hidden rounded-lg shadow-lg aspect-[1/1] md:aspect-[1168/360]" href="active-event.html">
             <picture class="w-full h-full flex-shrink-0">
                     <source srcset="../assets/images/highlight-1.webp" media="(min-width: 768px)">
                     <img src="../assets/images/highlight-1-sm.webp" class="w-full h-full object-cover" alt="Evento atual">
@@ -48,7 +88,7 @@
         </a>
 
         <!-- Upcoming events -->
-        <div class="max-w-4xl mx-auto mt-6">
+        <div class="max-w-6xl mx-auto mt-6">
             <h2>Próximos eventos</h2>
             <div id="upcoming-events">
                 <!-- Upcoming events will be loaded dynamically here -->
@@ -81,6 +121,8 @@
         </a>
     </footer>
 
+    <!-- Sidebar script -->
+    <script src="../scripts/sidebar.js"></script>
     <!-- Upcoming events script -->
     <script src="../scripts/upcoming-events.js"></script>
 </body>
