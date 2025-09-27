@@ -78,23 +78,10 @@
             </div>
         </div>
     </header>
-    <main class="bg-gray-100 flex-1 p-4 pt-16 pb-20">
-        <!-- Active event -->
-        <div class="relative w-full max-w-6xl mx-auto mt-2 overflow-hidden rounded-lg shadow-lg aspect-[1/1] md:aspect-[1168/360]">
-            <picture class="w-full h-full flex-shrink-0">
-                    <source srcset="../assets/images/active-event/active-event.webp" media="(min-width: 768px)">
-                    <img src="../assets/images/active-event/active-event-sm.webp" class="w-full h-full object-cover" alt="Evento atual">
-                </picture>
-        </div>
-
-        <!-- Objectives -->
-        <div class="max-w-6xl mx-auto mt-6">
-            <h2>Objetivos</h2>
-                
-            <div id="objectives-container">
-               <!-- Objectives will be loaded here dynamically -->
-            </div>
-        </div>
+    <main class="bg-red-400 text-white text-center font-semibold shadow p-3 rounded w-full max-w-md mx-auto block m-auto hover:cursor-pointer hover:bg-red-500 transition" class="bg-gray-100 flex-1 p-4 pt-16 pb-20">
+        <button type="button">
+            Excluir conta
+        </button>
     </main>
     <footer class="fixed bottom-0 left-0 w-full flex bg-white text-black text-center shadow-[0_-2px_6px_rgba(0,0,0,0.1)] md:hidden">
         <!-- Home -->
@@ -124,7 +111,10 @@
 
     <!-- Sidebar script -->
     <script src="../scripts/sidebar.js"></script>
-    <!-- Script to load obectives dynamically -->
-    <script src="../scripts/active-event-objectives.js"></script>
+    <!-- Avatar dropdown script -->
+    <script src="../scripts/avatar-dropdown.js"></script>
+    <!-- Logout script -->
+    <script src="../scripts/logout.js"></script>
+    <!-- Week highlights carousel script -->
 </body>
 </html>
