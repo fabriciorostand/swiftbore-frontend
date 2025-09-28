@@ -8,6 +8,30 @@ function updateIcons(darkMode) {
   document.getElementById("settingsIcon").src = darkMode ? "../assets/icons/settings-white.png" : "../assets/icons/settings.png";
 }
 
+// Função para atualizar a aparência do toggle
+function updateToggleAppearance(enabled) {
+  if (!darkModeToggle) return;
+  
+  const toggleContainer = darkModeToggle.nextElementSibling;
+  const toggleKnob = toggleContainer ? toggleContainer.firstElementChild : null;
+  
+  if (toggleContainer && toggleKnob) {
+    if (enabled) {
+      // Modo escuro ativado - usa classes Tailwind
+      toggleContainer.classList.remove("bg-gray-300");
+      toggleContainer.classList.add("bg-orange-400");
+      toggleKnob.classList.remove("translate-x-0");
+      toggleKnob.classList.add("translate-x-5");
+    } else {
+      // Modo escuro desativado - usa classes Tailwind
+      toggleContainer.classList.remove("bg-orange-400");
+      toggleContainer.classList.add("bg-gray-300");
+      toggleKnob.classList.remove("translate-x-5");
+      toggleKnob.classList.add("translate-x-0");
+    }
+  }
+}
+
 // Função para aplicar/remover modo escuro
 function setDarkMode(enabled) {
   if (enabled) {
@@ -19,6 +43,8 @@ function setDarkMode(enabled) {
     localStorage.setItem("darkMode", "disabled");
     if (darkModeToggle) darkModeToggle.checked = false;
   }
+  
+  updateToggleAppearance(enabled);
   updateIcons(enabled);
 }
 
