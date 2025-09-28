@@ -10,14 +10,14 @@
     <title>Swiftbore</title>
 </head>
 <body class="flex flex-col min-h-screen">
-    <header class="fixed top-0 left-0 w-full bg-orange-400 dark:bg-gray-900 px-6 py-2 flex items-center justify-between shadow-md z-50">
+    <header class="fixed top-0 left-0 w-full bg-orange-400 dark:bg-gray-800 px-6 py-2 flex items-center justify-between shadow-md z-50">
         <!-- Menu button -->
         <button id="menuToggleBtn" class="hidden md:flex">
             <img id="menuToggleIcon" class="h-6 w-6 cursor-pointer" src="../assets/icons/menu.png" alt="Ícone do menu">
         </button>
 
         <!-- Menu sidebar -->
-        <div id="sidebar" class="fixed top-0 left-0 h-full w-60 bg-orange-400 shadow-lg transform -translate-x-full transition-transform duration-300 z-40">
+        <div id="sidebar" class="fixed top-0 left-0 h-full w-60 bg-orange-400 dark:bg-gray-800 shadow-lg transform -translate-x-full transition-transform duration-300 z-40">
             <div class="p-4 flex items-center gap-3">
                 <!-- Menu button in sidebar -->
                 <button id="sidebarToggleBtn" class="p-2">
@@ -38,7 +38,7 @@
                     <img src="../assets/icons/store-white.png" alt="Loja">
                         Loja
                 </a>
-                <a href="configurations.html" class="flex items-center gap-2 p-2 text-white rounded-lg hover:bg-orange-300 transition">
+                <a href="account-preferences.html" class="flex items-center gap-2 p-2 text-white rounded-lg hover:bg-orange-300 transition">
                     <img src="../assets/icons/settings-white.png" alt="Configurações">
                         Configurações
                 </a>
@@ -66,12 +66,12 @@
                 <img id="avatarBtn" class="h-10 w-10 cursor-pointer rounded-full" src="../assets/icons/account-avatar.png" alt="Ícone do avatar">
 
                 <!-- Dropdown -->
-                <div id="avatarDropdown" class="hidden absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg py-2">
-                    <a href="profile.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                <div id="avatarDropdown" class="hidden absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 rounded-lg shadow-lg py-2">
+                    <a href="profile.html" class="block px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                         Perfil
                     </a>
                     <!-- Logout button -->
-                    <button id="logoutBtn" class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:cursor-pointer">
+                    <button id="logoutBtn" class="w-full text-left px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 hover:cursor-pointer">
                         Sair
                     </button>
                 </div>
@@ -80,17 +80,17 @@
     </header>
     <main class="bg-gray-100 dark:bg-black flex flex-1 pt-14 pb-20 md:pb-0">
         <!-- Configurations sidebar -->
-        <aside class="w-60 bg-white shadow-md rounded-md p-4 hidden md:flex flex-col">
-            <h2 class="text-xl font-semibold text-gray-700 mb-4 px-3 py-2">Configurações</h2>
+        <aside class="w-60 bg-white dark:bg-gray-800 shadow-md p-4 hidden md:flex flex-col">
+            <h2 class="text-xl font-semibold text-gray-700 dark:text-white mb-4 px-3 py-2">Configurações</h2>
             <nav class="flex flex-col gap-2">
                 <!-- Account preferences -->
-                <a href="account-preferences.html" class="flex items-center gap-2 px-3 py-2 rounded-lg text-orange-500 bg-orange-50 transition">
+                <a href="account-preferences.html" class="flex items-center gap-2 px-3 py-2 rounded-lg text-orange-500 dark:text-orange-300 bg-orange-100 dark:bg-gray-700 transition">
                     <img src="../assets/icons/account-avatar.png" class="h-6 w-6" alt="Perfil">
                     Preferências da conta
                 </a>
 
                 <!-- Notifications -->
-                <a href="" class="flex items-center gap-2 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition">
+                <a href="" class="flex items-center gap-2 px-3 py-2 rounded-lg text-gray-700 dark:text-white hover:bg-gray-100 transition">
                     <img src="../assets/icons/notification.png" class="h-6 w-6" alt="Notificações">
                     Notificações
                 </a>
@@ -100,10 +100,10 @@
         <!-- Account preferences content -->
         <section class="flex-1 max-w-6xl mx-auto p-6">
             <!-- Display -->
-            <div class="bg-white shadow-md rounded-xl p-6 mb-6">
-                <h2 class="text-lg font-semibold text-gray-700 mb-4">Exibição</h2>
+            <div class="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 mb-6">
+                <h2 class="text-lg font-semibold text-gray-700 dark:text-white mb-4">Exibição</h2>
                 <div class="flex items-center justify-between">
-                    <span class="text-gray-600">Modo escuro</span>
+                    <span class="text-gray-600 dark:text-white">Modo escuro</span>
                     <label class="inline-flex items-center cursor-pointer">
                         <input type="checkbox" id="darkModeToggle" class="sr-only peer">
                         <div class="w-11 h-6 bg-gray-300 rounded-full peer-checked:bg-orange-400 relative transition-colors duration-300">
@@ -114,37 +114,37 @@
             </div>
 
             <!-- Account management -->
-            <div class="bg-white shadow-md rounded-xl p-6">
-                <h2 class="text-lg font-semibold text-gray-700 mb-4">Gerenciamento da conta</h2>
-                <p class="text-gray-600 mb-4">Ao excluir sua conta, todos os seus dados serão removidos permanentemente. Esta ação não pode ser desfeita.</p>
+            <div class="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6">
+                <h2 class="text-lg font-semibold text-gray-700 dark:text-white mb-4">Gerenciamento da conta</h2>
+                <p class="text-gray-600 dark:text-white mb-4">Ao excluir sua conta, todos os seus dados serão removidos permanentemente. Esta ação não pode ser desfeita.</p>
                 <button class="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded-lg transition hover:cursor-pointer">
                     Excluir conta
                 </button>
             </div>
         </section>
     </main>
-    <footer class="fixed bottom-0 left-0 w-full flex bg-white text-black text-center shadow-[0_-2px_6px_rgba(0,0,0,0.1)] md:hidden">
+    <footer class="fixed bottom-0 left-0 w-full flex bg-white dark:bg-gray-800 text-black dark:text-white text-center shadow-[0_-2px_6px_rgba(0,0,0,0.1)] md:hidden">
         <!-- Home -->
         <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="./dashboard.html">
-            <img src="../assets/icons/home.png" alt="Início">
+            <img id="homeIcon" src="../assets/icons/home.png" alt="Início">
             Início
         </a>
         
         <!-- Events -->
         <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="events.html">
-            <img src="../assets/icons/calendar.png" alt="Eventos">
+            <img id="calendarIcon" src="../assets/icons/calendar.png" alt="Eventos">
             Eventos
         </a>
         
         <!-- Store -->
         <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="store.html">
-            <img src="../assets/icons/store.png" alt="Loja">
+            <img id="storeIcon" src="../assets/icons/store.png" alt="Loja">
             Loja
         </a>
         
         <!-- Configs -->
         <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="configurations.html">
-            <img src="../assets/icons/settings.png" alt="Configurações">
+            <img id="settingsIcon" src="../assets/icons/settings.png" alt="Configurações">
             Configurações
         </a>
     </footer>
