@@ -16,7 +16,7 @@
             <img id="menuToggleIcon" class="h-6 w-6 cursor-pointer" src="../assets/icons/menu.png" alt="Ícone do menu">
         </button>
 
-        <!-- Sidebar -->
+        <!-- Menu sidebar -->
         <div id="sidebar" class="fixed top-0 left-0 h-full w-60 bg-orange-400 shadow-lg transform -translate-x-full transition-transform duration-300 z-40">
             <div class="p-4 flex items-center gap-3">
                 <!-- Menu button in sidebar -->
@@ -78,10 +78,50 @@
             </div>
         </div>
     </header>
-    <main class="bg-red-400 text-white text-center font-semibold shadow p-3 rounded w-full max-w-md mx-auto block m-auto hover:cursor-pointer hover:bg-red-500 transition" class="bg-gray-100 flex-1 p-4 pt-16 pb-20">
-        <button type="button">
-            Excluir conta
-        </button>
+    <main class="bg-gray-100 flex flex-1 pt-14 pb-20 md:pb-0">
+        <!-- Configurations sidebar -->
+        <aside class="w-60 bg-white shadow-md rounded-md p-4 hidden md:flex flex-col">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4 px-3 py-2">Configurações</h2>
+            <nav class="flex flex-col gap-2">
+                <!-- Account preferences -->
+                <a href="account-preferences.html" class="flex items-center gap-2 px-3 py-2 rounded-lg text-orange-500 bg-orange-50 transition">
+                    <img src="../assets/icons/account-avatar.png" class="h-6 w-6" alt="Perfil">
+                    Preferências da conta
+                </a>
+
+                <!-- Notifications -->
+                <a href="" class="flex items-center gap-2 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition">
+                    <img src="../assets/icons/notification.png" class="h-6 w-6" alt="Notificações">
+                    Notificações
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Account preferences content -->
+        <section class="flex-1 max-w-6xl mx-auto p-6">
+            <!-- Display -->
+            <div class="bg-white shadow-md rounded-xl p-6 mb-6">
+                <h2 class="text-lg font-semibold text-gray-700 mb-4">Exibição</h2>
+                <div class="flex items-center justify-between">
+                    <span class="text-gray-600">Modo escuro</span>
+                    <label class="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" id="darkModeToggle" class="sr-only">
+                        <div class="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-orange-400 relative transition">
+                            <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow-md transition-transform peer-checked:translate-x-5"></div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Account management -->
+            <div class="bg-white shadow-md rounded-xl p-6">
+                <h2 class="text-lg font-semibold text-gray-700 mb-4">Gerenciamento da conta</h2>
+                <p class="text-gray-600 mb-4">Ao excluir sua conta, todos os seus dados serão removidos permanentemente. Esta ação não pode ser desfeita.</p>
+                <button class="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded-lg transition hover:cursor-pointer">
+                    Excluir conta
+                </button>
+            </div>
+        </section>
     </main>
     <footer class="fixed bottom-0 left-0 w-full flex bg-white text-black text-center shadow-[0_-2px_6px_rgba(0,0,0,0.1)] md:hidden">
         <!-- Home -->
@@ -109,8 +149,8 @@
         </a>
     </footer>
 
-    <!-- Sidebar script -->
-    <script src="../scripts/sidebar.js"></script>
+    <!-- Menu sidebar script -->
+    <script src="../scripts/menu-sidebar.js"></script>
     <!-- Avatar dropdown script -->
     <script src="../scripts/avatar-dropdown.js"></script>
     <!-- Logout script -->
