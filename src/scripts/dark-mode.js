@@ -2,10 +2,30 @@
 const darkModeToggle = document.getElementById("darkModeToggle");
 
 function updateIcons(darkMode) {
-  document.getElementById("homeIcon").src = darkMode ? "../assets/icons/home-white.png" : "../assets/icons/home.png";
-  document.getElementById("calendarIcon").src = darkMode ? "../assets/icons/calendar-white.png" : "../assets/icons/calendar.png";
-  document.getElementById("storeIcon").src = darkMode ? "../assets/icons/store-white.png" : "../assets/icons/store.png";
-  document.getElementById("settingsIcon").src = darkMode ? "../assets/icons/settings-white.png" : "../assets/icons/settings.png";
+  // Ícones do footer
+  const homeIcon = document.getElementById("homeIcon");
+  const calendarIcon = document.getElementById("calendarIcon");
+  const storeIcon = document.getElementById("storeIcon");
+  const settingsIcon = document.getElementById("settingsIcon");
+  
+  if (homeIcon) homeIcon.src = darkMode ? "../assets/icons/home-white.png" : "../assets/icons/home.png";
+  if (calendarIcon) calendarIcon.src = darkMode ? "../assets/icons/calendar-white.png" : "../assets/icons/calendar.png";
+  if (storeIcon) storeIcon.src = darkMode ? "../assets/icons/store-white.png" : "../assets/icons/store.png";
+  if (settingsIcon) settingsIcon.src = darkMode ? "../assets/icons/settings-white.png" : "../assets/icons/settings.png";
+  
+  // Ícones do sidebar mobile (configurações)
+  const accountAvatarIconMobile = document.getElementById("accountAvatarIconMobile");
+  const notificationIconMobile = document.getElementById("notificationIconMobile");
+  
+  if (accountAvatarIconMobile) accountAvatarIconMobile.src = darkMode ? "../assets/icons/account-avatar.png" : "../assets/icons/account-avatar-gray.png";
+  if (notificationIconMobile) notificationIconMobile.src = darkMode ? "../assets/icons/notification.png" : "../assets/icons/notification-gray.png";
+  
+  // Ícones do sidebar desktop (configurações)
+  const accountAvatarIconDesktop = document.getElementById("accountAvatarIconDesktop");
+  const notificationIconDesktop = document.getElementById("notificationIconDesktop");
+  
+  if (accountAvatarIconDesktop) accountAvatarIconDesktop.src = darkMode ? "../assets/icons/account-avatar.png" : "../assets/icons/account-avatar-gray.png";
+  if (notificationIconDesktop) notificationIconDesktop.src = darkMode ? "../assets/icons/notification.png" : "../assets/icons/notification-gray.png";
 }
 
 // Função para atualizar a aparência do toggle
