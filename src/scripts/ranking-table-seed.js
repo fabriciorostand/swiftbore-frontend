@@ -33,11 +33,11 @@ function renderRanking(stores) {
 
     // Create table
     const table = document.createElement("table");
-    table.className = "w-full bg-white rounded-2xl shadow overflow-hidden border border-gray-200";
+    table.className = "w-full bg-white dark:bg-gray-800 rounded-2xl shadow overflow-hidden border border-gray-200 dark:border-gray-500";
 
     // Table header
     const thead = document.createElement("thead");
-    thead.className = "bg-gray-100 text-gray-700";
+    thead.className = "bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-white";
     thead.innerHTML = `
         <tr>
             <th class="px-4 py-4 text-center">Posição</th>
@@ -60,23 +60,23 @@ function renderRanking(stores) {
         } else if (store.rank === 3) {
             rankStyle = "text-orange-500 font-bold";
         } else {
-            rankStyle = "text-gray-700";
+            rankStyle = "text-gray-700 dark:text-white";
         }
 
         const isUserStore = store.name.includes("FIAP");
         const userHighlight = isUserStore
-            ? "bg-orange-100 border-l-4 border-orange-500"
+            ? "bg-orange-100 dark:bg-orange-300 border-l-4 border-orange-500"
             : "";
 
         const tr = document.createElement("tr");
-        tr.className = `hover:bg-gray-50 transition ${userHighlight}`;
+        tr.className = `hover:bg-gray-50 dark:hover:bg-gray-700 transition ${userHighlight}`;
 
         tr.innerHTML = `
             <td class="px-4 py-4 text-center ${rankStyle}">${store.rank}º</td>
-            <td class="px-4 py-4 text-center font-medium ${isUserStore ? "text-orange-600" : "text-gray-800"}">
+            <td class="px-4 py-4 text-center font-medium ${isUserStore ? "text-orange-600" : "text-gray-800 dark:text-white"}">
                 ${store.name}
             </td>
-            <td class="px-4 py-4 text-center font-semibold ${isUserStore ? "text-orange-600" : "text-gray-600"}">
+            <td class="px-4 py-4 text-center font-semibold ${isUserStore ? "text-orange-600" : "text-gray-600 dark:text-white"}">
                 ${store.points} pts
             </td>
         `;
