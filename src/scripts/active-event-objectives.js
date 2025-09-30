@@ -26,7 +26,7 @@ objectives.forEach(obj => {
     const percentualProgress = (obj.progress / obj.goal) * 100;
 
     const div = document.createElement("div");
-    div.className = "border border-gray-300 rounded-sm mt-4 p-4";
+    div.className = "dark:text-white dark:bg-gray-800 border border-gray-300 dark:border-gray-500 rounded-sm mt-4 p-4";
     div.innerHTML = `
         <div class="flex justify-between items-center mb-8">
             <span class="font-medium">${obj.title}</span>
@@ -38,7 +38,7 @@ objectives.forEach(obj => {
         </div>
 
         <!-- Markers -->
-        <div class="flex justify-between text-sm text-gray-500 mt-1">
+        <div class="flex justify-between text-sm text-gray-500 dark:text-gray-400 mt-1">
             <span>${obj.progress}</span>
             <span>${obj.goal}</span>
         </div>
