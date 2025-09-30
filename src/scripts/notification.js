@@ -19,13 +19,22 @@ document.addEventListener("DOMContentLoaded", () => {
         notifications.push("Bem vindo a Swiftbore!");
     }
 
-    notifications.forEach((msg) => {
+    // Se não há notificações, exibe mensagem padrão
+    if (notifications.length === 0) {
         const item = document.createElement("div");
         item.className =
-            "px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 cursor-default";
-        item.textContent = msg;
+            "px-4 py-2 text-gray-500 dark:text-gray-400 cursor-default text-center";
+        item.textContent = "Sem notificações";
         notificationDropdown.appendChild(item);
-    });
+    } else {
+        notifications.forEach((msg) => {
+            const item = document.createElement("div");
+            item.className =
+                "px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 cursor-default";
+            item.textContent = msg;
+            notificationDropdown.appendChild(item);
+        });
+    }
 
     notificationWrapper.appendChild(notificationDropdown);
 
@@ -42,6 +51,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const toggleDropdown = (e) => {
         if (e && typeof e.stopPropagation === "function") e.stopPropagation();
+        
+        // Fecha o dropdown do avatar se estiver aberto
+        const avatarDropdown = document.getElementById("avatarDropdown");
+        if (avatarDropdown && !avatarDropdown.classList.contains("hidden")) {
+            avatarDropdown.classList.add("hidden");
+        }
+        
         notificationDropdown.classList.toggle("hidden");
 
         // Se abriu, marca como lida (na sessão atual)
