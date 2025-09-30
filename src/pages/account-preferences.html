@@ -79,6 +79,26 @@
         </div>
     </header>
     <main class="bg-gray-100 dark:bg-black flex flex-1 pt-14 pb-20 md:pb-0">
+        <!-- Configurations container -->
+        <div class="md:hidden fixed top-14 left-0 w-full bg-white dark:bg-gray-800 shadow-sm z-40">
+            <h2 class="text-2xl text-center font-semibold text-gray-700 dark:text-white px-3 py-6 border-b border-gray-200 dark:border-gray-700">
+                Configurações
+            </h2>
+            <nav class="flex flex-row justify-around">
+                <!-- Account preferences -->
+                <a href="account-preferences.html" class="flex items-center gap-2 px-3 py-2 rounded-lg text-orange-500 dark:text-orange-300 bg-orange-100 dark:bg-gray-700 transition">
+                    <img src="../assets/icons/account-avatar.png" class="h-6 w-6" alt="Perfil">
+                    Preferências da conta
+                </a>
+
+                <!-- Notifications -->
+                <a href="" class="flex items-center gap-2 px-3 py-2 rounded-lg text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+                    <img src="../assets/icons/notification.png" class="h-6 w-6" alt="Notificações">
+                    Notificações
+                </a>
+            </nav>
+        </div>
+
         <!-- Configurations sidebar -->
         <aside class="w-60 bg-white dark:bg-gray-800 shadow-md p-4 hidden md:flex flex-col">
             <h2 class="text-xl font-semibold text-gray-700 dark:text-white mb-4 px-3 py-2">Configurações</h2>
@@ -98,7 +118,7 @@
         </aside>
 
         <!-- Account preferences content -->
-        <section class="flex-1 max-w-6xl mx-auto p-6">
+        <section class="flex-1 max-w-6xl mx-auto mt-32 md:mt-0 p-6">
             <!-- Display -->
             <div class="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 mb-6">
                 <h2 class="text-lg font-semibold text-gray-700 dark:text-white mb-4">Exibição</h2>
