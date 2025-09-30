@@ -10,7 +10,7 @@
     <title>Swiftbore</title>
 </head>
 <body class="flex flex-col min-h-screen">
-    <header class="fixed top-0 left-0 w-full bg-orange-400 px-6 py-2 flex items-center justify-between shadow-md z-50">
+    <header class="fixed top-0 left-0 w-full bg-orange-400 dark:bg-gray-800 px-6 py-2 flex items-center justify-between shadow-md z-50">
         <div class="flex items-center gap-4">
             <!-- Back button -->
             <button onclick="window.history.back()">
@@ -42,19 +42,19 @@
                 <img id="avatarBtn" class="h-10 w-10 cursor-pointer rounded-full" src="../assets/icons/account-avatar.png" alt="Ícone do avatar">
 
                 <!-- Dropdown -->
-                <div id="avatarDropdown" class="hidden absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg py-2">
-                    <a href="profile.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                <div id="avatarDropdown" class="hidden absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 rounded-lg shadow-lg py-2">
+                    <a href="profile.html" class="block px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                         Perfil
                     </a>
-                    <button class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">
+                    <button class="w-full text-left px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                         Sair
                     </button>
                 </div>
             </div>
         </div>
     </header>
-    <main class="bg-gray-100 flex-1 p-4 pt-16 pb-20">
-        <div class="bg-white rounded-xl shadow-md max-w-6xl mx-auto mt-2 p-6 space-y-6">
+    <main class="bg-gray-100 dark:bg-black flex-1 p-4 pt-16 pb-20">
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md max-w-6xl mx-auto mt-2 p-6 space-y-6">
       
             <!-- Profile photo -->
             <div class="flex flex-col items-center">
@@ -68,23 +68,23 @@
             <!-- Form -->
             <form id="profileForm" class="space-y-4">
                 <div>
-                    <label class="block w-full max-w-md mx-auto mt-10">Nome:</label>
-                    <input class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1" type="text">
+                    <label class="block w-full max-w-md mx-auto mt-10 text-gray-700 dark:text-white">Nome:</label>
+                    <input class="bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-500 p-2 rounded w-full max-w-md mx-auto block mt-1 text-black dark:text-white" type="text">
                 </div>
 
                 <div>
-                    <label class="block w-full max-w-md mx-auto mt-4">Data de nascimento:</label>
-                    <input class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1" type="date">
+                    <label class="block w-full max-w-md mx-auto mt-4 text-gray-700 dark:text-white">Data de nascimento:</label>
+                    <input class="bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-500 p-2 rounded w-full max-w-md mx-auto block mt-1 text-black dark:text-white" type="date">
                 </div>
 
                 <div>
-                    <label class="block w-full max-w-md mx-auto mt-4">Email:</label>
-                    <input class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1" type="email">
+                    <label class="block w-full max-w-md mx-auto mt-4 text-gray-700 dark:text-white">Email:</label>
+                    <input class="bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-500 p-2 rounded w-full max-w-md mx-auto block mt-1 text-black dark:text-white" type="email">
                 </div>
 
                 <div>
-                    <label class="block w-full max-w-md mx-auto mt-4">Nova senha:</label>
-                    <input class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1" type="password" placeholder="Digite sua nova senha">
+                    <label class="block w-full max-w-md mx-auto mt-4 text-gray-700 dark:text-white">Nova senha:</label>
+                    <input class="bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-500 p-2 rounded w-full max-w-md mx-auto block mt-1 text-black dark:text-white" type="password" placeholder="Digite sua nova senha">
                 </div>
 
                 <button class="bg-orange-400 text-white font-semibold shadow p-3 rounded w-full max-w-md mx-auto block mt-8 lg:mb-4 hover:cursor-pointer hover:bg-orange-500 transition" type="submit" >
@@ -96,5 +96,7 @@
 
     <!-- Avatar dropdown script -->
     <script src="../scripts/avatar-dropdown.js"></script>
+    <!-- Dark mode script -->
+    <script src="../scripts/dark-mode.js"></script>
 </body>
 </html>

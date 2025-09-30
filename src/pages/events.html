@@ -10,14 +10,14 @@
     <title>Swiftbore</title>
 </head>
 <body class="flex flex-col min-h-screen">
-    <header class="fixed top-0 left-0 w-full bg-orange-400 px-6 py-2 flex items-center justify-between shadow-md z-50">
+    <header class="fixed top-0 left-0 w-full bg-orange-400 dark:bg-gray-800 px-6 py-2 flex items-center justify-between shadow-md z-50">
         <!-- Menu button -->
         <button id="menuToggleBtn" class="hidden md:flex">
             <img id="menuToggleIcon" class="h-6 w-6 cursor-pointer" src="../assets/icons/menu.png" alt="Ícone do menu">
         </button>
 
         <!-- Sidebar -->
-        <div id="sidebar" class="fixed top-0 left-0 h-full w-60 bg-orange-400 shadow-lg transform -translate-x-full transition-transform duration-300 z-40">
+        <div id="sidebar" class="fixed top-0 left-0 h-full w-60 bg-orange-400 dark:bg-gray-800 shadow-lg transform -translate-x-full transition-transform duration-300 z-40">
             <div class="p-4 flex items-center gap-3">
                 <!-- Menu button in sidebar -->
                 <button id="sidebarToggleBtn" class="p-2">
@@ -26,19 +26,19 @@
             </div>
 
             <nav class="flex flex-col p-4 gap-4">
-                <a href="./dashboard.html" class="flex items-center gap-2 p-2 text-white rounded-lg hover:bg-orange-300 transition">
+                <a href="./dashboard.html" class="flex items-center gap-2 p-2 text-white rounded-lg hover:bg-orange-300 dark:hover:bg-gray-700 transition">
                     <img src="../assets/icons/home-white.png" alt="Início">
                         Início
                 </a>
-                <a href="events.html" class="flex items-center gap-2 p-2 text-white rounded-lg hover:bg-orange-300 transition">
+                <a href="events.html" class="flex items-center gap-2 p-2 text-white rounded-lg hover:bg-orange-300 dark:hover:bg-gray-700 transition">
                     <img src="../assets/icons/calendar-white.png" alt="Eventos">
                         Eventos
                 </a>
-                <a href="store.html" class="flex items-center gap-2 p-2 text-white rounded-lg hover:bg-orange-300 transition">
+                <a href="store.html" class="flex items-center gap-2 p-2 text-white rounded-lg hover:bg-orange-300 dark:hover:bg-gray-700 transition">
                     <img src="../assets/icons/store-white.png" alt="Loja">
                         Loja
                 </a>
-                <a href="configurations.html" class="flex items-center gap-2 p-2 text-white rounded-lg hover:bg-orange-300 transition">
+                <a href="configurations.html" class="flex items-center gap-2 p-2 text-white rounded-lg hover:bg-orange-300 dark:hover:bg-gray-700 transition">
                     <img src="../assets/icons/settings-white.png" alt="Configurações">
                         Configurações
                 </a>
@@ -66,19 +66,19 @@
                 <img id="avatarBtn" class="h-10 w-10 cursor-pointer rounded-full" src="../assets/icons/account-avatar.png" alt="Ícone do avatar">
 
                 <!-- Dropdown -->
-                <div id="avatarDropdown" class="hidden absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg py-2">
-                    <a href="profile.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                <div id="avatarDropdown" class="hidden absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 rounded-lg shadow-lg py-2">
+                    <a href="profile.html" class="block px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                         Perfil
                     </a>
                     <!-- Logout button -->
-                    <button id="logoutBtn" class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:cursor-pointer">
+                    <button id="logoutBtn" class="w-full text-left px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 hover:cursor-pointer">
                         Sair
                     </button>
                 </div>
             </div>
         </div>
     </header>
-    <main class="bg-gray-100 flex-1 p-4 pt-16 pb-20">
+    <main class="bg-gray-100 dark:bg-black flex-1 p-4 pt-16 pb-20">
         <!-- Active event -->
         <a class="block relative w-full max-w-6xl mx-auto mt-2 overflow-hidden rounded-lg shadow-lg aspect-[1/1] md:aspect-[1168/360]" href="active-event.html">
             <picture class="w-full h-full flex-shrink-0">
@@ -95,35 +95,37 @@
             </div>
         </div>
     </main>
-    <footer class="fixed bottom-0 left-0 w-full flex bg-white text-black text-center shadow-[0_-2px_6px_rgba(0,0,0,0.1)] md:hidden">
+    <footer class="fixed bottom-0 left-0 w-full flex bg-white dark:bg-gray-800 text-black dark:text-white text-center shadow-[0_-2px_6px_rgba(0,0,0,0.1)] md:hidden">
         <!-- Home -->
-        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="./dashboard.html">
+        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700" href="./dashboard.html">
             <img src="../assets/icons/home.png" alt="Início">
             Início
         </a>
         
         <!-- Events -->
-        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="events.html">
+        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700" href="events.html">
             <img src="../assets/icons/calendar.png" alt="Eventos">
             Eventos
         </a>
         
         <!-- Store -->
-        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="store.html">
+        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700" href="store.html">
             <img src="../assets/icons/store.png" alt="Loja">
             Loja
         </a>
         
         <!-- Configs -->
-        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100" href="configurations.html">
+        <a class="flex flex-1 flex-col items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700" href="configurations.html">
             <img src="../assets/icons/settings.png" alt="Configurações">
             Configurações
         </a>
     </footer>
 
-    <!-- Sidebar script -->
-    <script src="../scripts/sidebar.js"></script>
+    <!-- Menu sidebar script -->
+    <script src="../scripts/menu-sidebar.js"></script>
     <!-- Upcoming events script -->
     <script src="../scripts/upcoming-events.js"></script>
+    <!-- Dark mode script -->
+    <script src="../scripts/dark-mode.js"></script>
 </body>
 </html>
