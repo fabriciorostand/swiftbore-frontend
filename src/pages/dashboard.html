@@ -58,7 +58,7 @@
 
             <!-- Notification icon -->
             <div>
-                <img class="h-6 w-6 cursor-pointer" src="../assets/icons/notification.png" alt="Ícone das notificações">
+                <img id="notificationIcon" class="h-6 w-6 cursor-pointer" src="../assets/icons/notification.png" alt="Ícone das notificações">
             </div>
 
             <!-- Account avatar -->
@@ -66,7 +66,7 @@
                 <img id="avatarBtn" class="h-10 w-10 cursor-pointer rounded-full" src="../assets/icons/account-avatar.png" alt="Ícone do avatar">
 
                 <!-- Dropdown -->
-                <div id="avatarDropdown" class="hidden absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 rounded-lg shadow-lg py-2">
+                <div id="avatarDropdown" class="hidden absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2">
                     <a href="profile.html" class="block px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                         Perfil
                     </a>
@@ -141,6 +141,8 @@
 
     <!-- Menu sidebar script -->
     <script src="../scripts/menu-sidebar.js"></script>
+    <!-- Notification script -->
+    <script src="../scripts/notification.js"></script>
     <!-- Avatar dropdown script -->
     <script src="../scripts/avatar-dropdown.js"></script>
     <!-- Logout script -->

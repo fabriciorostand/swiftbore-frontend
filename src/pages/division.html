@@ -34,7 +34,7 @@
 
             <!-- Notification icon -->
             <div>
-                <img class="h-6 w-6 cursor-pointer" src="../assets/icons/notification.png" alt="Ícone das notificações">
+                <img id="notificationIcon" class="h-6 w-6 cursor-pointer" src="../assets/icons/notification.png" alt="Ícone das notificações">
             </div>
 
             <!-- Account avatar -->
@@ -46,7 +46,8 @@
                     <a href="profile.html" class="block px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                         Perfil
                     </a>
-                    <button class="w-full text-left px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <!-- Logout button -->
+                    <button id="logoutBtn" class="w-full text-left px-4 py-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 hover:cursor-pointer">
                         Sair
                     </button>
                 </div>
@@ -101,8 +102,12 @@
         </section>
     </main>
 
+    <!-- Notification script -->
+    <script src="../scripts/notification.js"></script>
     <!-- Avatar dropdown script -->
     <script src="../scripts/avatar-dropdown.js"></script>
+    <!-- Logout script -->
+    <script src="../scripts/logout.js"></script>
     <!-- Dark mode script -->
     <script src="../scripts/dark-mode.js"></script>
 </body>

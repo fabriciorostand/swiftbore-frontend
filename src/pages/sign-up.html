@@ -23,8 +23,12 @@
             <input class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1" type="email" placeholder="Digite seu e-mail">
 
             <label class="block w-full max-w-md mx-auto mt-4">Senha:</label>
-            <input class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1" type="password" placeholder="Digite sua senha">
-
+            <div class="relative w-full max-w-md mx-auto mt-1">
+                <input id="password" class="bg-white border border-gray-300 p-2 rounded w-full block pr-10" type="password" placeholder="Digite sua senha">
+                <button type="button" id="toggle-password" class="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer hidden">
+                    <img id="eye-icon" src="../assets/icons/eye-visibility-off.png" alt="Mostrar senha" class="w-5 h-5">
+                </button>
+            </div>
             <p class="text-black text-center block w-full max-w-md mx-auto mt-8">
                 Ao se cadastrar, você concorda com nossos <a class="text-white" href="#">Termos</a>, 
                 <a class="text-white" href="#">Política de Privacidade</a> e
@@ -34,9 +38,14 @@
             <button class="bg-white text-black p-3 rounded w-full max-w-md mx-auto block mt-8 hover:cursor-pointer hover:bg-gray-100" type="submit" >Cadastre-se</button>
 
             <p class="text-black text-center block w-full max-w-md mx-auto mt-1">Tem uma conta?  
-                <a class="text-white font-semibold" href="../index.html">Conecte-se</a>
+                <a class="text-white font-semibold" href="index.html">Conecte-se</a>
             </p>
         </form>
     </main>
+
+    <!-- Password toggle script -->
+    <script src="../scripts/password-toggle.js"></script>
+    <!-- Sign up script -->
+    <script src="../scripts/sign-up.js"></script>
 </body>
 </html>

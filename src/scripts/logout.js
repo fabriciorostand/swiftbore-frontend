@@ -1,5 +1,6 @@
 const logoutBtn = document.getElementById("logoutBtn");
     
 logoutBtn.addEventListener("click", () => {
-    window.location.href = "../index.html";
+    sessionStorage.removeItem("welcomeNotificationRead");
+    window.location.href = "index.html";
 });

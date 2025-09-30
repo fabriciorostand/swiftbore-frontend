@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Tailwind  -->
-    <link href="./styles/tailwind/output.css" rel="stylesheet">
+    <link href="../styles/tailwind/output.css" rel="stylesheet">
     
     <title>Swiftbore</title>
 </head>
@@ -17,18 +17,23 @@
             <input class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1" type="email" placeholder="Digite seu e-mail">
             
             <label class="block w-full max-w-md mx-auto mt-4">Senha:</label>
-            <input class="bg-white border border-gray-300 p-2 rounded w-full max-w-md mx-auto block mt-1"type="password" placeholder="Digite sua senha">
+            <div class="relative w-full max-w-md mx-auto mt-1">
+                <input id="password" class="bg-white border border-gray-300 p-2 rounded w-full block pr-10" type="password" placeholder="Digite sua senha">
+                <button type="button" id="toggle-password" class="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer hidden">
+                    <img id="eye-icon" src="../assets/icons/eye-visibility-off.png" alt="Mostrar senha" class="w-5 h-5">
+                </button>
+            </div>
 
-            <a class="text-sm text-white font-semibold block w-full max-w-md mx-auto mt-1" href="./pages/password-reset.html">
-                Esqueci minha senha
-            </a>
+            <div class="text-sm text-white font-semibold block w-full max-w-md mx-auto mt-1">
+                <a href="password-reset.html">Esqueci minha senha</a>
+            </div>
             
             <button id="signin-button" class="bg-white text-black p-3 rounded w-full max-w-md mx-auto block mt-8 hover:cursor-pointer hover:bg-gray-100" type="submit">
                 Entrar
             </button>
 
             <p class="text-black text-center block w-full max-w-md mx-auto mt-1">Não tem uma conta?  
-                <a class="text-white font-semibold" href="./pages/sign-up.html">Cadastre-se</a>
+                <a class="text-white font-semibold" href="sign-up.html">Cadastre-se</a>
             </p>
 
             <!-- Separator -->
@@ -41,19 +46,21 @@
             <div class="flex justify-center gap-8 w-full max-w-md mx-auto">
                 <!-- Google button -->
                 <a class="w-14 h-14 rounded-full flex items-center justify-center shadow hover:shadow-lg transition bg-white" href="#">
-                    <img src="./assets/images/social-medias/google-logo.png" alt="Google" class="w-10 h-10 object-contain">
+                    <img src="../assets/images/social-medias/google-logo.png" alt="Google" class="w-10 h-10 object-contain">
                 </a>
 
                 <!-- Facebook button -->
                 <a class="w-14 h-14 rounded-full flex items-center justify-center shadow hover:shadow-lg transition overflow-hidden" href="#">
-                    <img class="w-full h-full object-contain" src="./assets/images/social-medias/facebook-logo.png" alt="Facebook">
+                    <img class="w-full h-full object-contain" src="../assets/images/social-medias/facebook-logo.png" alt="Facebook">
                 </a>
             </div>
 
         </form>
     </main>
 
-    <!-- JavaScript -->
-    <script src="./scripts/index.js"></script>
+    <!-- Password toggle script -->
+    <script src="../scripts/password-toggle.js"></script>
+    <!-- Login script -->
+    <script src="../scripts/login.js"></script>
 </body>
 </html>
