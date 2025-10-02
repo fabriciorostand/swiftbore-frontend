@@ -22,6 +22,9 @@ const objectives = [
 // Container 
 const container = document.getElementById("objectives-container");
 
+// Configurar o container como grid responsivo
+container.className = "grid grid-cols-1 md:grid-cols-2 gap-4";
+
 objectives.forEach(obj => {
     const percentualProgress = (obj.progress / obj.goal) * 100;
 
