@@ -66,6 +66,10 @@ function setDarkMode(enabled) {
   
   updateToggleAppearance(enabled);
   updateIcons(enabled);
+  // Reaplica o ícone laranja da página ativa após mudar os ícones do tema
+  if (typeof window.applyActiveFooterIcon === 'function') {
+    try { window.applyActiveFooterIcon(); } catch (_) {}
+  }
 }
 
 // Verifica preferência salva no carregamento
